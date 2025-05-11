@@ -75,3 +75,10 @@ MCP Server for the Slack API, enabling Claude to interact with Slack workspaces.
 1. `SLACK_BOT_TOKEN`: Required. The Bot User OAuth Token starting with `xoxb-`.
 2. `SLACK_TEAM_ID`: Required. Your Slack workspace ID starting with `T`.
 3. `SLACK_CHANNEL_IDS`: Optional. Comma-separated list of channel IDs to limit channel access (e.g., "C01234567, C76543210"). If not set, all public channels will be listed.
+
+### Additional setup
+Adding an HTTP server component to bot to handle Slack events directly and respond to messages in channels . Using Express.js, a popular and lightweight web framework for Node.js.
+
+npm install express body-parser dotenv @slack/types
+npm install @slack/events-api
+
